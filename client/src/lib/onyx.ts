@@ -1,7 +1,7 @@
 /* Quiet Signal reminder: warm paper, ink, oxide lime, editorial asymmetry, signal rails, calm motion. */
 
-export const API_BASE = import.meta.env.DEV ? "/local-api" : "http://127.0.0.1:3000";
-export const logoUrl = "/manus-storage/onyx-mark_30dbcaf7.png";
+export const API_BASE = "";
+export const logoUrl = "/onyx-mark.png";
 export type SecurityMode = "vulnerable" | "remediated";
 export const SECURITY_MODE_KEY = "onyx_security_mode";
 
