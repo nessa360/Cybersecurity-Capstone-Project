@@ -117,8 +117,8 @@ Do not use the vulnerable implementation as a template for a production applicat
 | **OG-001** | Insufficient Rate Limiting / Account Lockout  | 🔴 Critical | Validated    |
 | **OG-002** | Broken Object-Level Authorization (BOLA/IDOR) | 🟠 High     | Validated    |
 | **OG-003** | Excessive Data Exposure                       | 🟠 High     | Validated    |
-| **OG-004** | Missing Transport Encryption                  | 🟠 High     | Observed     |
-| **OG-005** | Insufficient Security Logging                 | 🟡 Medium   | Hypothesized |
+| **OG-004** | Missing Transport Encryption                  | 🟠 High     | Validated     |
+| **OG-005** | Insufficient Security Logging                 | 🟡 Medium   | Partially Validated |
 
 The detailed vulnerability assessment report contains the evidence, risk analysis, CVSS scoring, prioritization, and remediation recommendations.
 
