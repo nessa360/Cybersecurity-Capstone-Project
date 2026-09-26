@@ -768,5 +768,3 @@ The application should only be executed and tested in a controlled environment.
 
 Cybersecurity | Vulnerability Assessment
 
-Women Techsters Sprint — Cybersecurity Track
-](https://wisprflow.ai/)
