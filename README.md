@@ -86,7 +86,7 @@ http://localhost:3000
 ---
 
 # Deployed Project Link
-https://cybersecurity-capstone-project.onrender.com
+(https://cybersecurity-capstone-project.vercel.app/)
 
 ---
 
@@ -406,17 +406,25 @@ This means an attacker could repeatedly submit password guesses.
 Run:
 
 ```powershell
-$body = @{
+$failedLogin = '{"username":"akosua","password":"wrong-password"}'
+
+1.$body = @{
     username = "akosua"
     password = "wrongpassword"
 } | ConvertTo-Json
 
-Invoke-RestMethod `
-    -Uri "http://localhost:3000/api/login" `
-    -Method Post `
-    -ContentType "application/json" `
-    -Body $body
-```
+1..10 | ForEach-Object {
+    try {
+        Invoke-RestMethod `
+            -Uri "http://localhost:3000/api/login" `
+            -Method Post `
+            -ContentType "application/json" `
+            -Body $body
+    }
+    catch {
+        $_.ErrorDetails.Message
+    }
+}
 
 Repeat the request several times.
 
@@ -761,3 +769,4 @@ The application should only be executed and tested in a controlled environment.
 Cybersecurity | Vulnerability Assessment
 
 Women Techsters Sprint — Cybersecurity Track
+](https://wisprflow.ai/)
